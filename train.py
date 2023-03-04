@@ -295,7 +295,6 @@ def aqi_train_model(city):
   df = df.reset_index()
   df['ds'] = df['dt']
   df = df[['y' ,'ds']]
-  df
   #----------------
   m = Prophet(
               seasonality_mode='multiplicative',
